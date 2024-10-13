@@ -19,8 +19,11 @@ describe extended mycustomer.pizzas_2
 
 INSERT INTO mycustomer.pizzas_2 VALUES (1, 'vidhi');
 
-%python
 spark.conf.get("spark.sql.warehouse.dir") ------- to check my directory 
+
+%fs ls dbfs:/user/hive/warehouse/mycustomer.db/pizzas_1
+
+
 
 
 
