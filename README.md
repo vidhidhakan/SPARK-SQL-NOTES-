@@ -9,3 +9,20 @@ Describe database mycustomer
 
 Show databases;
 
+* CHAPTER 2(CREATE TABLES)
+
+create table if not exists mycustomer.pizza_2(customer id int, name string);
+
+describe mycustomer.pizzas_2
+
+describe extended mycustomer.pizzas_2
+
+INSERT INTO mycustomer.pizzas_2 VALUES (1, 'vidhi');
+
+%python
+spark.conf.get("spark.sql.warehouse.dir") ------- to check my directory 
+
+
+
+
+
