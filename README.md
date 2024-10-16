@@ -28,7 +28,18 @@ spark.conf.get("spark.sql.warehouse.dir") ------- to check my directory
   WHEN MY CLUSTER TERMINATE MY TABLE WILL GONNA DELETE)
 
 * CHAPTER 4 (EXTERNAL TABLE) 
+
+  (THIS WILL DELET ONLY MY METADATA BUT MY ACTUAL DATA WILL BE STORE AS I PROVIDE MY LOCATION
+  SO IT WONT DELETE EVEN IF MY CLUSTER TERMINATES)
   
+create table mycustomer.external_table1(id int, name string) 
+using delta 
+location "/spark_sql/external_tables/external_table1" 
+tblproperties ( 
+  'Type' = 'External', 
+  'delta.minReaderVersion' ='1', 
+  'delta.minWriterVersion' = '2' 
+)  
 
 
 
