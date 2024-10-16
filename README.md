@@ -29,7 +29,7 @@ spark.conf.get("spark.sql.warehouse.dir") ------- to check my directory
 
 * CHAPTER 4 (EXTERNAL TABLE) 
 
-  (THIS WILL DELET ONLY MY METADATA BUT MY ACTUAL DATA WILL BE STORE AS I PROVIDE MY LOCATION
+  (THIS WILL DELETE ONLY MY METADATA BUT MY ACTUAL DATA WILL BE STORE AS I PROVIDE MY LOCATION
   SO IT WONT DELETE EVEN IF MY CLUSTER TERMINATES)
   
 create table mycustomer.external_table1(id int, name string) 
@@ -41,6 +41,11 @@ tblproperties (
   'delta.minWriterVersion' = '2' 
 )  
 
+* CHAPTER 4 (CREATE TABLE USING CSV FILE)
+
+FROM PYSPARK.SQL.TYPES IMPORT *
+
+  
 
 
 
