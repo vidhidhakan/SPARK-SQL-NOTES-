@@ -41,9 +41,15 @@ tblproperties (
   'delta.minWriterVersion' = '2' 
 )  
 
-* CHAPTER 4 (CREATE TABLE USING CSV FILE)
+* CHAPTER 4 (CREATE VIEW IN SPARK SQL)
+  create or replace view simple_view as select * from emp_csv
+  select * from simple_view
 
-FROM PYSPARK.SQL.TYPES IMPORT *
+* CHAPTER 5 (CREATE TEMP VIEW THIS TEMP VIEW CANT CREATE IN SEPARATE SESSION)
+
+* CHAPTER 6( CREATE GLOBAL VIEW THIS WILL AVAILABLE IN DIFF NOTEBOOK/ WHEN U DEATTACH/ATTACH CLUSTER)
+  select * from global_temp.global_view 
+
 
   
 
