@@ -48,7 +48,16 @@ tblproperties (
 * CHAPTER 5 (CREATE TEMP VIEW THIS TEMP VIEW CANT CREATE IN SEPARATE SESSION)
 
 * CHAPTER 6( CREATE GLOBAL VIEW THIS WILL AVAILABLE IN DIFF NOTEBOOK/ WHEN U DEATTACH/ATTACH CLUSTER)
-  select * from global_temp.global_view 
+  select * from global_temp.global_view
+
+* CHAPTER 7(NOT NULL)
+create table myname(id int, name string not null)
+insert into myname values(1,null) ----- gives me error
+alter table myname change column drop not null
+
+
+
+  
 
 
   
