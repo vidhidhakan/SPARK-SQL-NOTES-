@@ -60,6 +60,7 @@ alter table myname change column drop not null
 insert into myname values(1,'VIDHI)
 alter table myname add constraint salary1 check (salary>50000)
 
+* CHAPTER 9 ()
 
 
 
