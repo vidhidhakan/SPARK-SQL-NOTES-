@@ -60,7 +60,12 @@ alter table myname change column drop not null
 insert into myname values(1,'VIDHI)
 alter table myname add constraint salary1 check (salary>50000)
 
-* CHAPTER 9 ()
+* CHAPTER 9 (TRUNCATE)
+  use truncate when i want to delete whole table
+  in csv/delta/parquet format use delete to delete some specific rows
+
+* CHAPTER 10 (DELETE COMMAND WITH SUBQUERY)
+    
 
 
 
