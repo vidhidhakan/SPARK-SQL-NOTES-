@@ -55,6 +55,12 @@ create table myname(id int, name string not null)
 insert into myname values(1,null) ----- gives me error
 alter table myname change column drop not null
 
+* CHAPTER 8(CHECK CONSTRAINT)
+ create table myname(id int, name string not null)
+insert into myname values(1,'VIDHI)
+alter table myname add constraint salary1 check (salary>50000)
+
+
 
 
   
