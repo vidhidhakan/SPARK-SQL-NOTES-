@@ -65,6 +65,12 @@ alter table myname add constraint salary1 check (salary>50000)
   in csv/delta/parquet format use delete to delete some specific rows
 
 * CHAPTER 10 (DELETE COMMAND WITH SUBQUERY)
+  delete from mycity1
+  where id in(
+  select id
+  from city)
+
+* CHAPTER 11 (update command)
     
 
 
