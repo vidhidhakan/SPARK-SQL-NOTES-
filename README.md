@@ -115,7 +115,8 @@ WHEN NOT MATCHED THEN
   
   VALUES (m2.id, m2.name, m2.salary, m2.gender, m2.city, m2.state);
 
-  * CHAPTER 14(MERGE WITH DELETE COMMAND)
+ * CHAPTER 14(MERGE WITH DELETE COMMAND)
+   
     MERGE INTO vidhi AS v
     
     USING piyush AS p
