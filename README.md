@@ -87,6 +87,7 @@ alter table myname add constraint salary1 check (salary>50000)
 * CHAPTER 12 (RESTORE)- VERSION IS ONLY AVIALBLE IN DELTA TABLE
    restore table employee_1  version as of 1
    restore table employee_1  timestamp as of
+  
 
   
   
