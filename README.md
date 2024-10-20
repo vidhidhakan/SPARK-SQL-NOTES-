@@ -90,17 +90,29 @@ alter table myname add constraint salary1 check (salary>50000)
 
 * CHAPTER 13(MERGE)
   MERGE INTO merge1 AS m1
+  
   USING merge2 AS m2
+  
   ON m1.id = m2.id
+  
   WHEN MATCHED THEN
+  
    UPDATE SET
+  
     m1.name = m2.name,
+  
     m1.gender = m2.gender,
+  
     m1.salary = m2.salary,
+  
     m1.city = m2.city,
+  
     m1.state = m2.state
+  
 WHEN NOT MATCHED THEN
+
   INSERT (id, name, salary, gender, city, state)
+  
   VALUES (m2.id, m2.name, m2.salary, m2.gender, m2.city, m2.state);
   
  
