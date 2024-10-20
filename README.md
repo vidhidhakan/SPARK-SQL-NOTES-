@@ -71,7 +71,17 @@ alter table myname add constraint salary1 check (salary>50000)
   from city)
 
 * CHAPTER 11 (update command)
-  
+    1.  update employee_1
+     set city ='patna'
+     where (select city from employee_city where city = 'bihar')
+
+    2. update employee_1
+       set state = 'lucknw'
+       where exists(select city from employee_city where employee_1.city = employee_city.city)
+
+    3. update employee_1
+       set salary = 80000
+       where id in (select id from employee_city)  
     
 
 
