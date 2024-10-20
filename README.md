@@ -114,6 +114,23 @@ WHEN NOT MATCHED THEN
   INSERT (id, name, salary, gender, city, state)
   
   VALUES (m2.id, m2.name, m2.salary, m2.gender, m2.city, m2.state);
+
+  * CHAPTER 14(MERGE WITH DELETE COMMAND)
+    MERGE INTO vidhi AS v
+    
+    USING piyush AS p
+    
+    ON v.id = p.id
+
+   WHEN MATCHED AND p.city = 'rajkot' THEN
+   
+    DELETE
+
+  WHEN NOT MATCHED THEN
+  
+    INSERT (id, name, gender, city)
+    
+    VALUES (p.id, p.name, p.gender, p.city);
   
  
   
