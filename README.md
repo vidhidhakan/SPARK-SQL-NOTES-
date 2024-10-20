@@ -71,6 +71,7 @@ alter table myname add constraint salary1 check (salary>50000)
   from city)
 
 * CHAPTER 11 (update command)
+  
     
 
 
