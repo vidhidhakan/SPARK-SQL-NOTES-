@@ -132,7 +132,8 @@ WHEN NOT MATCHED THEN
     INSERT (id, name, gender, city)
     
     VALUES (p.id, p.name, p.gender, p.city);
-  
+
+  * CHAPTER 15(INTERSECT)
  
   
 
