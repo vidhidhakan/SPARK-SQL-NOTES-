@@ -136,7 +136,7 @@ WHEN NOT MATCHED THEN
   * CHAPTER 15(INTERSECT) -- when i want to see common things
     select * from vidhi1 intersect select * from vidhi2;
 
- * CHAPTER 16(EXCEPT/EXCEPT ALL) --- except - remove dulicates/ except all -- dont remove duplicates
+ * CHAPTER 16(EXCEPT/EXCEPT ALL) --- except - (first table contain unique values )remove dulicates/ except all(include duplicates from 1st table
     
  
   
