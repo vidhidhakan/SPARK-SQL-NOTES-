@@ -136,9 +136,17 @@ WHEN NOT MATCHED THEN
   * CHAPTER 15(INTERSECT) -- when i want to see common things
     select * from vidhi1 intersect select * from vidhi2;
 
- * CHAPTER 16(EXCEPT/EXCEPT ALL) --- except - (first table contain unique values )remove dulicates/ except all(include duplicates from 1st table
+  * CHAPTER 16(EXCEPT/EXCEPT ALL) --- except - (first table contain unique values )remove dulicates/ except all(include 
+ duplicates from 1st table
+
+  * CHAPTER 17(WINDOW FUNCTION)-- USED WHEN I NEED TO DO ORDERING/PARTITIONG BASED ON SPECIFIC ROWS NOT DATSET
+    rank() will skip rows eg -- 1,1,starts with 3
     
- 
+    denserank() wont skip rows eg --1,1,2,3,3,4
+    
+    rownumber() givenumber -- 1,2,3,4,
+    
+    sum(salary)over (partition by state order by salary desc), avg,max,min,count -- sameway
   
 
   
