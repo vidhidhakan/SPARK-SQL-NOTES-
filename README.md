@@ -133,7 +133,10 @@ WHEN NOT MATCHED THEN
     
     VALUES (p.id, p.name, p.gender, p.city);
 
-  * CHAPTER 15(INTERSECT)
+  * CHAPTER 15(INTERSECT) -- when i want to see common things
+    select * from vidhi1 intersect select * from vidhi2;
+
+    
  
   
 
