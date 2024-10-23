@@ -147,6 +147,12 @@ WHEN NOT MATCHED THEN
     rownumber() givenumber -- 1,2,3,4,
     
     sum(salary)over (partition by state order by salary desc), avg,max,min,count -- sameway
+
+* CHAPTER(18) LEAD
+  
+lead - if i want to see next row
+lag - if i want to see previous row
+     
   
 
   
