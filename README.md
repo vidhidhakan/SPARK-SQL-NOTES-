@@ -160,7 +160,12 @@ lag(salesamount,1) over (partitioned by year order by ids desc) as totalsales
   Select collect_list(salary) from yas1
   select collect_set(salary) from yas1
      
-  
+* CHAPTER (20)- CONCAT
+  select('employee',' ',name,' ',salary)from yas1
+
+* CHAPTER(21) concat_ws() --- this will include separator evernthough if its null it wont give extra space
+  select concat_ws(" ",name,salesamount) as totalsalary from yas1
+  * 
 
   
   
