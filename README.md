@@ -171,7 +171,15 @@ lag(salesamount,1) over (partitioned by year order by ids desc) as totalsales
 
 * CHAPTER(23)date_add(): Adds or subtracts a specific number of days from a date
   
-  syntax : dateadd(start_date,num_days) -- select * , date_add(sales_date,10) from pizza  
+  syntax : dateadd(start_date,num_days) -- select * , date_add(sales_date,10) from pizza
+
+* CHAPTER 24 -  datediff(): Finds the difference between two dates in terms of days.
+   select *, date_diff(sales_date,order_date) from pizza1
+  
+
+  
+  
+  
   
   
 
