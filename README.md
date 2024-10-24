@@ -165,8 +165,17 @@ lag(salesamount,1) over (partitioned by year order by ids desc) as totalsales
 
 * CHAPTER(21) concat_ws() --- this will include separator evernthough if its null it wont give extra space
   select concat_ws(" ",name,salesamount) as totalsalary from yas1
-  * 
 
+* CHAPTER(22) contains--- this use to see whether my value is true/false
+  select name,contains(name,'vidhi') from yas1
+
+* CHAPTER(23)date_add(): Adds or subtracts a specific number of days from a date
+  
+  syntax : dateadd(start_date,num_days) -- select * , date_add(sales_date,10) from pizza  
+  
+  
+
+   
   
   
 
