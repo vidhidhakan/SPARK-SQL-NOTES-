@@ -156,7 +156,9 @@ lag - if i want to see previous row
 lead(salesamount,2) over (partitioned by year order by id asc) as totalsales
 lag(salesamount,1) over (partitioned by year order by ids desc) as totalsales
 
-
+* CHAPTER (19) COLLECT LIST/SET
+  Select collect_list(salary) from yas1
+  select collect_set(salary) from yas1
      
   
 
