@@ -169,15 +169,13 @@ lag(salesamount,1) over (partitioned by year order by ids desc) as totalsales
 * CHAPTER(22) contains--- this use to see whether my value is true/false
   select name,contains(name,'vidhi') from yas1
 
-* CHAPTER(23)date_add(): Adds or subtracts a specific number of days from a date
-  
-  syntax : dateadd(start_date,num_days) -- select * , date_add(sales_date,10) from pizza
-
-* CHAPTER 24 -  datediff(): Finds the difference between two dates in terms of days.
-   select *, date_diff(sales_date,order_date) from pizza1
-
-* CHAPTER 25 - date_format() --- select *, date_format(dateofjoining,'yyyy-mm-dd') from yas1
+* CHAPTER 23 - date_format() --- select *, date_format(dateofjoining,'yyyy-mm-dd') from yas1
              - date_part() ---- select*, date_part('y',dateofleaving) from yas1
+             - date_add(start_date,num_days) -- select * , date_add(sales_date,10) from yas1
+             - date_diff()----- select *, date_diff(sales_date,order_date) from yas1
+             - date_sub ---- select *, date_sub(dateofjoining,10) from yas 1
+             - date_trun  ---- month/date/year --- select *, date_trun('mm',dateofjoining)-- starts from 1(reset)
+     
 
   
   
