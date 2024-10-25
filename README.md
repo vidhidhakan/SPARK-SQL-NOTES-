@@ -175,7 +175,9 @@ lag(salesamount,1) over (partitioned by year order by ids desc) as totalsales
 
 * CHAPTER 24 -  datediff(): Finds the difference between two dates in terms of days.
    select *, date_diff(sales_date,order_date) from pizza1
-  
+
+* CHAPTER 25 - date_format() --- select *, date_format(dateofjoining,'yyyy-mm-dd') from yas1
+             - date_part() ---- select*, date_part('y',dateofleaving) from yas1
 
   
   
