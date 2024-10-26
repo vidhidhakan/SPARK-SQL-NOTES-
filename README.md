@@ -177,7 +177,14 @@ lag(salesamount,1) over (partitioned by year order by ids desc) as totalsales
              - date_trun  ---- month/date/year --- select *, date_trun('mm',dateofjoining)-- starts from 1(reset)
      
 
-  
+  * CHAPTER 24 (day of month/week/year)
+                -select *, dayofmonth('2023-09-19') - this will give me day from 1 to 31
+                -select *, dayofweek('2024-10-15') - this wil give me week from 1 to 7
+                -select *, dayofyear('2024-10-15') - this will give me year 366
+
+     
+
+    
   
   
   
