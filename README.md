@@ -2,9 +2,9 @@
 
 * CHAPTER 1(CREATE DATABASES) 
 
-Create database mycustomer
+Create database mycustomer(DATABASE NAME)
 
-Describe database mycustomer
+Describe database mycustomer(DATABASE NAME)
 
 Show databases;
 
