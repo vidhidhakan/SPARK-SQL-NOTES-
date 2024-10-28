@@ -1,4 +1,4 @@
-                                                         # SPARK-SQL-NOTES
+                                                         # SPARK-SQL-NOTES(TOTAL 24 CHAPTERS)
 
 * CHAPTER 1(CREATE DATABASES) 
 
