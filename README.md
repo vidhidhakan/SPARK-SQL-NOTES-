@@ -182,6 +182,7 @@ lag(salesamount,1) over (partitioned by year order by ids desc) as totalsales
                 -select *, dayofweek('2024-10-15') - this wil give me week from 1 to 7
                 -select *, dayofyear('2024-10-15') - this will give me year 366
 
+-------------------------------------------------------THE END -----------------------------------------------------
      
 
     
