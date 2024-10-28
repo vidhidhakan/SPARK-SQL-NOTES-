@@ -1,8 +1,8 @@
                                                          # SPARK-SQL-NOTES(TOTAL 24 CHAPTERS)
 
-* CHAPTER 1(CREATE DATABASES) 
+* CHAPTER 1   (CREATE DATABASES) 
 
-Create database mycustomer(DATABASE NAME)
+Create database mycustomer  (DATABASE NAME)
 
 Describe database mycustomer(DATABASE NAME)
 
